@@ -16,6 +16,7 @@
 		8497A7751EC2E06200B356CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497A7731EC2E06200B356CC /* LaunchScreen.storyboard */; };
 		8497A7801EC2E06300B356CC /* AJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497A77F1EC2E06300B356CC /* AJTests.m */; };
 		8497A78B1EC2E06300B356CC /* AJUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497A78A1EC2E06300B356CC /* AJUITests.m */; };
+		8497A79A1EC2E07900B356CC /* AJMaterialTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497A7991EC2E07900B356CC /* AJMaterialTextfield.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8497A7861EC2E06300B356CC /* AJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8497A78A1EC2E06300B356CC /* AJUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJUITests.m; sourceTree = "<group>"; };
 		8497A78C1EC2E06300B356CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8497A7981EC2E07900B356CC /* AJMaterialTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJMaterialTextfield.h; sourceTree = "<group>"; };
+		8497A7991EC2E07900B356CC /* AJMaterialTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJMaterialTextfield.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 		8497A7611EC2E06200B356CC /* AJ */ = {
 			isa = PBXGroup;
 			children = (
+				8497A7981EC2E07900B356CC /* AJMaterialTextfield.h */,
+				8497A7991EC2E07900B356CC /* AJMaterialTextfield.m */,
 				8497A7651EC2E06200B356CC /* AppDelegate.h */,
 				8497A7661EC2E06200B356CC /* AppDelegate.m */,
 				8497A7681EC2E06200B356CC /* ViewController.h */,
@@ -210,7 +215,7 @@
 				TargetAttributes = {
 					8497A75E1EC2E06200B356CC = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					8497A77A1EC2E06300B356CC = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -278,6 +283,7 @@
 			files = (
 				8497A76A1EC2E06200B356CC /* ViewController.m in Sources */,
 				8497A7671EC2E06200B356CC /* AppDelegate.m in Sources */,
+				8497A79A1EC2E07900B356CC /* AJMaterialTextfield.m in Sources */,
 				8497A7701EC2E06200B356CC /* AJ.xcdatamodeld in Sources */,
 				8497A7641EC2E06200B356CC /* main.m in Sources */,
 			);
@@ -430,10 +436,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AJ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SJ2016.AJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -441,10 +449,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AJ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SJ2016.AJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -513,6 +523,7 @@
 				8497A7911EC2E06300B356CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8497A7921EC2E06300B356CC /* Build configuration list for PBXNativeTarget "AJTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +532,7 @@
 				8497A7941EC2E06300B356CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8497A7951EC2E06300B356CC /* Build configuration list for PBXNativeTarget "AJUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +541,7 @@
 				8497A7971EC2E06300B356CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
